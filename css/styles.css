@@ -11,6 +11,10 @@ a {
     color: white;
 }
 
+#home {
+    border-bottom: 1px solid black;
+}
+
 .navbar {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -75,6 +79,7 @@ a {
     width: 100%;
     height: 100vh;
     background-color: #C8FFE0;
+    border-bottom: 1px solid black;
 }
 
 .info-square {
@@ -121,4 +126,27 @@ a {
     font-family: 'Bree Serif', serif;
     color: #614BC3;
     text-align: center;
+}
+
+#skills {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.g-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C8FFE0;
+}
+
+.w-square {
+    display: flex;
+    align-items: center;
+    font-size: 35.1px;
+    font-family: 'Ruda', sans-serif;
+    color: #33BBC5;
 }
