@@ -127,6 +127,55 @@ header {
     margin-top: 5px;
 }
 
+/*Skills Section*/
+#skills {
+    display: grid;
+    grid-template-rows: 25vh 75vh;
+}
+
+.skills-title, .skills-elements {
+    margin: 0 10%;
+}
+
+.skills-title h3 {
+    font-family: 'Bree Serif', serif;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #D80032;
+    text-decoration: underline;
+}
+
+.skills-title p {
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.skills-elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skills-elements img {
+    height: 100px;
+}
+
+.skills-elements h4 {
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.skills-elements p {
+    margin-top: 3px;
+    font-family: 'Noto Serif', serif;
+    text-align: justify;
+}
+
 @media (max-width: 820px) {
     header {
         grid-template-columns: 1fr;
@@ -169,6 +218,10 @@ header {
         height: 0;
     }
 
+    .about-text h3 {
+        font-size: 50px;
+    }
+
     .about-text p {
         font-size: 15px;
         margin: 0px 15px 50px 15px;
@@ -176,5 +229,24 @@ header {
 
     .about-picture {
         margin-bottom: 15px;
+    }
+
+    #skills {
+        margin: 0;
+        grid-template-rows: 20vh 80vh;
+    }
+
+    .skills-title h3 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .skills-title p {
+        font-size: 15px;
+    }
+
+    .skills-elements {
+        display: flex;
+        flex-direction: column;
     }
 }
