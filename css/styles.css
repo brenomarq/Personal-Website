@@ -313,8 +313,26 @@ header {
     }
 
     #projects {
-        margin-top: 50%;
+        margin-top: 90%;
         margin-left: 5px;
         margin-right: 5px;
+    }
+
+    .projects-title h3 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .projects-title p {
+        font-size: 15px;
+    }
+
+    .projects-elements {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .projects-elem {
+        margin: 20px;
     }
 }
