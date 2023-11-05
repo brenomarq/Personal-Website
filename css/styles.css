@@ -218,7 +218,7 @@ header {
 
 .projects-elem img {
     height: 120px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 2px solid white;
 }
 
@@ -236,6 +236,69 @@ header {
     margin-top: 3px;
     font-family: 'Noto Serif', serif;
     text-align: justify;
+}
+
+/*Contact Section*/
+#contact {
+    width: 100%;
+    margin: auto;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-rows: 25vh 75vh;
+    margin: 0 10%;
+}
+
+.contact-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.contact-title h3 {
+    font-family: 'Bree Serif', serif;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #D80032;
+    text-decoration: underline;
+}
+
+.contact-elements {
+    background: linear-gradient(
+        -45deg, #000, #3D0C11, #D80032, #F78CA2
+    );
+    margin: 15px 0;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.33fr 0.33fr 0.33fr;
+    gap: 15px;
+}
+
+.elem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-elem {
+    background-color: #FFF;
+    border-radius: 10px;
+    height: fit-content;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px;
+}
+
+.contact-elem a {
+    text-decoration: none;
+    color: #3D0C11;
+    font-family: 'outfit', 'sans-serif';
 }
 
 @media (max-width: 820px) {
@@ -314,8 +377,8 @@ header {
 
     #projects {
         margin-top: 90%;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 1px;
+        margin-right: 1px;
     }
 
     .projects-title h3 {
